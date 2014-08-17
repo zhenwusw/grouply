@@ -1,0 +1,14 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title><%= @title %></title>
+  <link rel="shortcut icon" href="/static/favicon.ico" />
+</head>
+<body>
+  <h3>Welcome to Grouply!</h3>
+  <ol>
+    <li>Change this template at <code>priv/templates/index.html.eex</code></li>
+    <li>Add new routes at <code>lib/grouply/router.ex</code></li>
+  </ol>
+</body>
+</html>
