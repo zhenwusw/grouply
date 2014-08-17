@@ -1,0 +1,24 @@
+{
+  "name": "grouply",
+  "version": "0.0.1",
+  "homepage": "https://github.com/zhenwusw/grouply",
+  "authors": [
+    "zhenwusw <zhenwusw@gmail.com>"
+  ],
+  "description": "Just a toy playing with Elixir",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "priv/scripts/lib",
+    "deps",
+    "_build",
+    "test"
+  ],
+  "dependencies": {
+    "jquery": "~1.11.1",
+    "jquery-ui": "~1.11.0"
+  }
+}
+
