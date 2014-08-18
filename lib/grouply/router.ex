@@ -4,6 +4,7 @@ defmodule Grouply.Router do
 
   plug :match
   plug :dispatch
+  plug Grouply.CodeReloader
 
   get "/index" do
     tmpl = EEx.eval_file "priv/templates/index.html.eex", assigns: [title: 'Grouply']
