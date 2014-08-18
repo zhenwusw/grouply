@@ -1,6 +1,8 @@
 defmodule Grouply do
+  require Logger
+
   def start do
-    IO.puts "Running Grouply with Cowboy on http://localhost:4000"
+    Logger.info "Starting Grouply with Cowboy on http://localhost:4000"
     Plug.Adapters.Cowboy.http Grouply.Router, []
   end
 end
