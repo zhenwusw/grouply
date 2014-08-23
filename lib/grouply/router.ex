@@ -7,7 +7,7 @@ defmodule Grouply.Router do
   plug Grouply.CodeReloader
 
   get "/index" do
-    tmpl = EEx.eval_file "priv/templates/index.html.eex", assigns: [title: 'Grouply']
+    tmpl = EEx.eval_file "priv/templates/index.html", assigns: [title: 'Grouply']
     send_resp(conn, 200, tmpl)
   end
 
