@@ -1,6 +1,7 @@
 defmodule Grouply.Router do
   import Plug.Conn
   use Plug.Router
+  plug Plug.Static, at: "/priv", from: Path.expand("../../priv/", __DIR__), gzip: true
 
   plug :match
   plug :dispatch
