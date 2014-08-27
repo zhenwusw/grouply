@@ -1,11 +1,21 @@
-defmodule Grouply.Router do
-  import Plug.Conn
+defmodule Router do
+  require Logger
+
   use Plug.Router
+  import Plug.Conn
+
   plug Plug.Static, at: "/priv", from: Path.expand("../../priv/", __DIR__), gzip: true
+
+  plug :reload_on_demand
+  def reload_on_demand(conn, _opts) do
+    Grouply.Reloader.purge_modules
+    Grouply.Reloader.load_modules
+
+    conn
+  end
 
   plug :match
   plug :dispatch
-  plug Grouply.CodeReloader
 
   get "/index" do
     tmpl = EEx.eval_file "priv/templates/index.html", assigns: [title: 'Grouply']
@@ -13,6 +23,7 @@ defmodule Grouply.Router do
   end
 
   match _ do
-    send_resp(conn, 404, "oops")
+    send_resp(conn, 404, "not founder")
   end
+
 end

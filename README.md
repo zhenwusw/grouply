@@ -11,5 +11,5 @@ Grouply
 
 
 ## Feature Roadmap
-- [] Code reload
-- [] Serve static assets with `Plug.Static`
+- [x] Serve static assets with `Plug.Static`
+- [x] Basic Code reload
