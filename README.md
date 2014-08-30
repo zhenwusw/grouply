@@ -13,3 +13,4 @@ Grouply
 ## Feature Roadmap
 - [x] Serve static assets with `Plug.Static`
 - [x] Basic Code reload
+- []  Assets management
