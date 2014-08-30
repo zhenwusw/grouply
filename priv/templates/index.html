@@ -57,13 +57,15 @@
     padding: 0px;
   }
 </style>
+<div class="container">
 
   <header class="row">
     <div class="col-md-2" style='font-size: 28px;line-height: 2;'>Grouply</div>
     <div class="col-md-2" style="color:rgb(15, 116, 84)">
       <span aria-hidden="true" class="ficon-users col-md-4" style="line-height:3;"></span>
       <span aria-hidden="true" class="ficon-comment col-md-4" style="line-height:3;"></span>
-      <span aria-hidden="true" class="ficon-notebook col-md-4" style="line-height:3;"></span>  </div>
+      <span aria-hidden="true" class="ficon-notebook col-md-4" style="line-height:3;"></span>
+    </div>
     <div class="col-md-6">
       <span class="searchbox">
         <span aria-hidden="true" class="ficon-search"></span>
@@ -72,376 +74,377 @@
     </div>
     <div class="col-md-2" style="font-size: 16px;line-height: 3.7;padding:0;">
       <span class="col-md-8" style="padding:0;">
-        <span class=" col-md-10" style="padding:0;"> Jakub </span>
-        <span class=" col-md-1 ficon-arrow" style="padding-left:0;line-height: 3.7;"></span>
+        <span class="col-md-10" style="padding:0;"> Jakub </span>
+        <span class="col-md-1 ficon-arrow" style="padding-left:0;line-height: 3.7;"></span>
       </span>
-      <%#= image_tag "friend4.png", class: "col-md-4 avatar" %>
+      <image src="/priv/images/friend4.png" class="col-md-4 avatar">
     </div>
   </header>
 
   <div class="row" >
     <div class="col-md-2" style="padding:0;background:rgb(31,31,31);" id="left_content">
       <div id="university">
-        <%#= image_tag "university.png" ,class: "img-responsive" %>
+        <image src="/priv/images/university.png" class="img-responsive">
         <p> University of Michigan</p>
       </div>
       <div id="nav">
         <ul class="navlist row" style="margin-top:-10px;">
-         <li class="col-md-12"> <span class="col-md-7">Inbox</span> <span class="col-md-3">215</span></li>
-         <li class="col-md-12"> <span class="col-md-7">Activity</span> <span class="col-md-3">25</span></li>
-         <li class="col-md-12"> <span class="col-md-7">Projects</span> <span class="col-md-3">15</span></li>
-         <li class="col-md-12"> <span class="col-md-7">File</span> <span class="col-md-3">35</span></li>
-       </ul>
-       <ul class="navlist row">
-         <li class="col-md-12"> <span class="col-md-7">People</span> <span class="col-md-3">5</span></li>
-         <li class="col-md-12"> <span class="col-md-7">Group</span> <span class="col-md-3">25</span></li>
-         <li class="col-md-12"> <span class="col-md-7">Gourses</span> <span class="col-md-3">15</span></li>
-       </ul>
-       <ul class="navlist row">
-         <li class="col-md-12"> TRENDING </li>
-         <li class="col-md-12"> Springbreak </li>
-         <li class="col-md-12"> Lore ipsum</li>
-       </ul>
-     </div>
-   </div>
-   <div class="col-md-8"  id="map">
-    <div class="row" style="font-size:24px;line-height:4;border-bottom: 1px solid rgb(219,218,211);" >
-      <div class="col-md-3">
-       <span>About</span>
-       <span class="ficon-arrow-right"></span>
-     </div>
-     <div class="col-md-5">
-       <span>Friends</span>
-       <span class="ficon-arrow-right"></span>
-     </div>
-     <div class="col-md-4">
-       <span>Courses</span>
-       <span class="ficon-arrow-right"></span>
-     </div>
-   </div>
-   <div class="row" style="border-bottom:1px solid rgb(219,218,211);">
-    <div class="col-md-3" style="text-align:left;border:none;">
-      <p style="padding: 20px;">Lorem ipsum dolor sit amet,consectetu adipliscing elit.Nunc tincldunt
-        connectetur curssus.orem ipsum dolor sit amet.Lorem ipsum.
-      </p>
-    </div>
-    <div class="col-md-5" style="padding-left:0;">
-      <div class="row">
-        <%#= image_tag "friend1.png", class: "col-md-4 img-responsive" %>
-        <%#= image_tag "friend2.png", class: "col-md-4 img-responsive" %>
-        <%#= image_tag "friend3.png", class: "col-md-4 img-responsive" %>
-      </div>
-      <div class="row">
-        <%#= image_tag "friend4.png", class: "col-md-4 img-responsive" %>
-        <%#= image_tag "friend5.png", class: "col-md-4 img-responsive" %>
-        <%#= image_tag "friend6.png", class: "col-md-4 img-responsive" %>
+          <li class="col-md-12"> <span class="col-md-7">Inbox</span> <span class="col-md-3">215</span></li>
+          <li class="col-md-12"> <span class="col-md-7">Activity</span> <span class="col-md-3">25</span></li>
+          <li class="col-md-12"> <span class="col-md-7">Projects</span> <span class="col-md-3">15</span></li>
+          <li class="col-md-12"> <span class="col-md-7">File</span> <span class="col-md-3">35</span></li>
+        </ul>
+        <ul class="navlist row">
+          <li class="col-md-12"> <span class="col-md-7">People</span> <span class="col-md-3">5</span></li>
+          <li class="col-md-12"> <span class="col-md-7">Group</span> <span class="col-md-3">25</span></li>
+          <li class="col-md-12"> <span class="col-md-7">Gourses</span> <span class="col-md-3">15</span></li>
+        </ul>
+        <ul class="navlist row">
+          <li class="col-md-12"> TRENDING </li>
+          <li class="col-md-12"> Springbreak </li>
+          <li class="col-md-12"> Lore ipsum</li>
+        </ul>
       </div>
     </div>
-    <div class="col-md-4" style="border:none;padding-left:0;">
-      <div class="row" style="font-size:15pxpx;line-height:3;border-bottom: 1px solid rgb(219,218,211);">
-        <div class="col-md-4">
-          <p class="ficon-stats" style="font-size: 27px;padding:14px 0;"></p>
-          <p>Economy</p>
+    <div class="col-md-8"  id="map">
+      <div class="row" style="font-size:24px;line-height:4;border-bottom: 1px solid rgb(219,218,211);" >
+        <div class="col-md-3">
+          <span>About</span>
+          <span class="ficon-arrow-right"></span>
+        </div>
+        <div class="col-md-5">
+          <span>Friends</span>
+          <span class="ficon-arrow-right"></span>
         </div>
         <div class="col-md-4">
-          <p class="ficon-earth" style="font-size: 27px;padding:14px 0;"></p>
-          <p>Geography</p>
-        </div>
-        <div class="col-md-4">
-          <p class="ficon-globe" style="font-size: 27px;padding:14px 0;"></p>
-          <p>chemistry</p>
+          <span>Courses</span>
+          <span class="ficon-arrow-right"></span>
         </div>
       </div>
-      <div class="row">
-        <div class="col-md-4">
-          <p class="ficon-book" style="font-size: 27px;padding:14px 0;padding:14px 0;"></p>
-          <p>English</p>
+      <div class="row" style="border-bottom:1px solid rgb(219,218,211);">
+        <div class="col-md-3" style="text-align:left;border:none;">
+          <p style="padding: 20px;">Lorem ipsum dolor sit amet,consectetu adipliscing elit.Nunc tincldunt
+          connectetur curssus.orem ipsum dolor sit amet.Lorem ipsum.
+          </p>
         </div>
-        <div class="col-md-4">
-          <p class="ficon-hammer" style="font-size: 27px;padding:14px 0;"></p>
-          <p>Law</p>
+        <div class="col-md-5" style="padding-left:0;">
+          <div class="row">
+            <image src="/priv/images/friend1.png" class="col-md-4 img-responsive">
+            <image src="/priv/images/friend2.png" class="col-md-4 img-responsive">
+            <image src="/priv/images/friend3.png" class="col-md-4 img-responsive">
+          </div>
+          <div class="row">
+            <image src="/priv/images/friend4.png" class="col-md-4 img-responsive">
+            <image src="/priv/images/friend5.png" class="col-md-4 img-responsive">
+            <image src="/priv/images/friend6.png" class="col-md-4 img-responsive">
+          </div>
         </div>
-        <div class="col-md-4">
-          <p class=" ficon-magnet" style="font-size: 27px;padding:14px 0;"></p>
-          <p>Physic</p>
+        <div class="col-md-4" style="border:none;padding-left:0;">
+          <div class="row" style="font-size:15pxpx;line-height:3;border-bottom: 1px solid rgb(219,218,211);">
+            <div class="col-md-4">
+              <p class="ficon-stats" style="font-size: 27px;padding:14px 0;"></p>
+              <p>Economy</p>
+            </div>
+            <div class="col-md-4">
+              <p class="ficon-earth" style="font-size: 27px;padding:14px 0;"></p>
+              <p>Geography</p>
+            </div>
+            <div class="col-md-4">
+              <p class="ficon-globe" style="font-size: 27px;padding:14px 0;"></p>
+              <p>chemistry</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-4">
+              <p class="ficon-book" style="font-size: 27px;padding:14px 0;padding:14px 0;"></p>
+              <p>English</p>
+            </div>
+            <div class="col-md-4">
+              <p class="ficon-hammer" style="font-size: 27px;padding:14px 0;"></p>
+              <p>Law</p>
+            </div>
+            <div class="col-md-4">
+              <p class=" ficon-magnet" style="font-size: 27px;padding:14px 0;"></p>
+              <p>Physic</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="row" id="tab">
+        <div  id="nav_tab1">
+          <span><a href="#tab1" data-toggle="tab">About me</a></span>
+          <span><a href="#tab2" data-toggle="tab">Feiends</a></span>
+          <span><a href="#tab3" data-toggle="tab">Courses</a></span>
+          <span><a href="#tab4" data-toggle="tab">Grouply</a></span>
+          <span><a href="#tab5" data-toggle="tab">People</a></span>
+          <span><a href="#tab6" data-toggle="tab">Archive</a></span>
+          <span> </span>
+        </div>
+        <div class="tab-content">
+          <div class="tab-pane active row" id="tab1">
+            <div class="row" style="font-size:25px;color:rgb(85,85,77);line-height:3;margin-right:0;">
+              <span class="col-md-10">About</span>
+              <span class="ficon-share2 col-md-2" style="font-size:20px;line-height:3.5;color: rgb(88,87,82);">  Edit</span>
+            </div>
+            <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
+              <span class="ficon-left-quote"></span>
+              <span>Hey guys!Sorrt fow asking here but ... I've been trying to remember the name of a trance song that I liked but Ican't. Iremember only that in its video there was a picture of a gril smelling some yellow flowers.I can't send you a link to the image here but if you have any idea about the name or how to find it please tell me .</span>
+              <span class="ficon-right-quote"></span>
+            </div>
+            <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
+              <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Birthday</span>
+              <span class="col-md-9">23 January 1995</span>
+              <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Relationship</span>
+              <span class="col-md-9">Single</span>
+              <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Hometown</span>
+              <span class="col-md-9">Saint Louis,MO</span>
+              <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Phone</span>
+              <span class="col-md-9">410-339-8067</span>
+              <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Contact</span>
+              <span class="col-md-9">petranova@gmail.com</span>
+            </div>
+            <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
+              <span class="row"> Interests</span>
+              <span class="row">
+                <span> Music</span>
+                <span> Books</span>
+                <span>Internet</span>
+                <span>Going out</span>
+                <span>Meditation</span>
+                <span>Photography</span>
+                <span>Add</span>
+              </span>
+            </div>
+
+            <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
+              <span class="row"> Hobbies</span>
+              <span class="row">
+                <span> Music</span>
+                <span> Books</span>
+                <span>Internet</span>
+                <span>Going out</span>
+                <span>Meditation</span>
+                <span>Photography</span>
+                <span>Add</span>
+              </span>
+            </div>
+
+          </div>
+          <div class="tab-pane" id="tab2">
+            <p>Howdy, I'm in Section 2.</p>
+          </div>
+          <div class="tab-pane" id="tab3">
+            <div class="row" style="font-size:25px;color:rgb(85,85,77);line-height:3;margin-right:0;">
+              <span class="col-md-11">Your Courses</span>
+              <span class="ficon-plus-alt col-md-1" style="font-size:32px;line-height:2;color: rgb(219,218,211);"></span>
+            </div>
+
+            <div class="row" id= "list_row">
+              <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
+                <span class="ficon-stats" style="font-size: 27px;padding:14px 0;"> </span> <span>Economy</span>
+              </span>
+              <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
+                <span class="col-md-2" style="padding:0;padding-top:44px;">
+                  <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
+                </span>
+                <span class="col-md-5" style="padding-top:35px;" >
+                  <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
+                </span>
+                <span class="col-md-5">
+                  <image src="/priv/images/friend4.png" class="col-md-3">
+                  <image src="/priv/images/friend5.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                </span>
+              </span>
+            </div>
+
+            <div class="row" id= "list_row">
+              <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
+                <span class="ficon-earth" style="font-size: 27px;padding:14px 0;"> </span>
+                <span>Geography</span>
+              </span>
+              <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
+                <span class="col-md-2" style="padding:0;padding-top:44px;">
+                  <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
+                </span>
+                <span class="col-md-5" style="padding-top:35px;" >
+                  <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
+                </span>
+                <span class="col-md-5">
+                  <image src="/priv/images/friend4.png" class="col-md-3">
+                  <image src="/priv/images/friend5.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                </span>
+              </span>
+            </div>
+
+            <div class="row" id= "list_row">
+              <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
+                <span class="ficon-globe" style="font-size: 27px;padding:14px 0;"> </span>
+                <span>Chemistry</span>
+              </span>
+              <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
+                <span class="col-md-2" style="padding:0;padding-top:44px;">
+                  <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
+                </span>
+                <span class="col-md-5" style="padding-top:35px;" >
+                  <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
+                </span>
+                <span class="col-md-5">
+                  <image src="/priv/images/friend4.png" class="col-md-3">
+                  <image src="/priv/images/friend5.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                </span>
+              </span>
+            </div>
+
+            <div class="row" id= "list_row">
+              <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
+                <span class="ficon-book" style="font-size: 27px;padding:14px 0;"> </span>
+                <span>English</span>
+              </span>
+              <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
+                <span class="col-md-2" style="padding:0;padding-top:44px;">
+                  <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
+                </span>
+                <span class="col-md-5" style="padding-top:35px;" >
+                  <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
+                </span>
+                <span class="col-md-5">
+                  <image src="/priv/images/friend4.png" class="col-md-3">
+                  <image src="/priv/images/friend5.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                </span>
+              </span>
+            </div>
+            <div class="row" id= "list_row">
+              <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
+                <span class="ficon-hammer" style="font-size: 27px;padding:14px 0;">
+                </span> <span>Law</span>
+              </span>
+              <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
+                <span class="col-md-2" style="padding:0;padding-top:44px;">
+                  <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
+                </span>
+                <span class="col-md-5" style="padding-top:35px;" >
+                  <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
+                </span>
+                <span class="col-md-5">
+                  <image src="/priv/images/friend4.png" class="col-md-3">
+                  <image src="/priv/images/friend5.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                  <image src="/priv/images/friend6.png" class="col-md-3">
+                </span>
+              </span>
+            </div>
+            <div class="row" id= "list_row">
+              <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
+                <span class="ficon-plus-alt" style="font-size: 27px;padding:14px 0;"> </span>
+              </span>
+              <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
+                <span class="col-md-2" style="padding-top:44px;">
+                  <span id="member_count"> Add  Course</span>
+                </span>
+              </span>
+            </div>
+          </div>
+          <div class="tab-pane" id="tab4">
+            <p>Howdy, I'm in Section 4.</p>
+          </div>
+          <div class="tab-pane" id="tab5">
+            <p>Howdy, I'm in Section 5.</p>
+          </div>
+          <div class="tab-pane" id="tab6">
+            <p>Howdy, I'm in Section 6.</p>
+          </div>
         </div>
       </div>
     </div>
 
-  </div>
-
-  <div class="row" id="tab">
-    <div  id="nav_tab1">
-      <span><a href="#tab1" data-toggle="tab">About me</a></span>
-      <span><a href="#tab2" data-toggle="tab">Feiends</a></span>
-      <span><a href="#tab3" data-toggle="tab">Courses</a></span>
-      <span><a href="#tab4" data-toggle="tab">Grouply</a></span>
-      <span><a href="#tab5" data-toggle="tab">People</a></span>
-      <span><a href="#tab6" data-toggle="tab">Archive</a></span>
-      <span> </span>
-    </div>
-    <div class="tab-content">
-     <div class="tab-pane active row" id="tab1">
-      <div class="row" style="font-size:25px;color:rgb(85,85,77);line-height:3;margin-right:0;">
-       <span class="col-md-10">About</span>
-       <span class="ficon-share2 col-md-2" style="font-size:20px;line-height:3.5;color: rgb(88,87,82);">  Edit</span>
-     </div>
-     <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
-      <span class="ficon-left-quote"></span>
-      <span>Hey guys!Sorrt fow asking here but ... I've been trying to remember the name of a trance song that I liked but Ican't. Iremember only that in its video there was a picture of a gril smelling some yellow flowers.I can't send you a link to the image here but if you have any idea about the name or how to find it please tell me .</span>
-      <span class="ficon-right-quote"></span>
-     </div>
-     <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
-        <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Birthday</span>
-        <span class="col-md-9">23 January 1995</span>
-        <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Relationship</span>
-        <span class="col-md-9">Single</span>
-        <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Hometown</span>
-        <span class="col-md-9">Saint Louis,MO</span>
-        <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Phone</span>
-        <span class="col-md-9">410-339-8067</span>
-        <span class="col-md-3"><span class="glyphicon glyphicon-star"></span> Contact</span>
-        <span class="col-md-9">petranova@gmail.com</span>
-     </div>
-     <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
-      <span class="row"> Interests</span>
-      <span class="row">
-        <span> Music</span>
-        <span> Books</span>
-        <span>Internet</span>
-        <span>Going out</span>
-        <span>Meditation</span>
-        <span>Photography</span>
-        <span>Add</span>
-      </span>
-     </div>
-
-     <div class="row" style="font-size: 17px;padding: 20px;border-top: 1px solid rgb(219,218,211);">
-      <span class="row"> Hobbies</span>
-      <span class="row">
-        <span> Music</span>
-        <span> Books</span>
-        <span>Internet</span>
-        <span>Going out</span>
-        <span>Meditation</span>
-        <span>Photography</span>
-        <span>Add</span>
-      </span>
-     </div>
-
-   </div>
-   <div class="tab-pane" id="tab2">
-     <p>Howdy, I'm in Section 2.</p>
-   </div>
-   <div class="tab-pane" id="tab3">
-     <div class="row" style="font-size:25px;color:rgb(85,85,77);line-height:3;margin-right:0;">
-       <span class="col-md-11">Your Courses</span>
-       <span class="ficon-plus-alt col-md-1" style="font-size:32px;line-height:2;color: rgb(219,218,211);"></span>
-     </div>
-
-     <div class="row" id= "list_row">
-       <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
-         <span class="ficon-stats" style="font-size: 27px;padding:14px 0;"> </span> <span>Economy</span>
-       </span>
-       <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
-         <span class="col-md-2" style="padding:0;padding-top:44px;">
-           <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
-         </span>
-         <span class="col-md-5" style="padding-top:35px;" >
-           <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
-         </span>
-         <span class="col-md-5">
-           <%#= image_tag "friend4.png", class: "col-md-3" %>
-           <%#= image_tag "friend5.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-         </span>
-       </span>
-     </div>
-
-     <div class="row" id= "list_row">
-       <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
-         <span class="ficon-earth" style="font-size: 27px;padding:14px 0;"> </span>
-         <span>Geography</span>
-       </span>
-       <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
-         <span class="col-md-2" style="padding:0;padding-top:44px;">
-           <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
-         </span>
-         <span class="col-md-5" style="padding-top:35px;" >
-           <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
-         </span>
-         <span class="col-md-5">
-           <%#= image_tag "friend4.png", class: "col-md-3" %>
-           <%#= image_tag "friend5.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-         </span>
-       </span>
-     </div>
-
-     <div class="row" id= "list_row">
-       <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
-         <span class="ficon-globe" style="font-size: 27px;padding:14px 0;"> </span>
-         <span>Chemistry</span>
-       </span>
-       <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
-         <span class="col-md-2" style="padding:0;padding-top:44px;">
-           <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
-         </span>
-         <span class="col-md-5" style="padding-top:35px;" >
-           <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
-         </span>
-         <span class="col-md-5">
-           <%#= image_tag "friend4.png", class: "col-md-3" %>
-           <%#= image_tag "friend5.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-         </span>
-       </span>
-     </div>
-
-     <div class="row" id= "list_row">
-       <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
-         <span class="ficon-book" style="font-size: 27px;padding:14px 0;"> </span>
-         <span>English</span>
-       </span>
-       <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
-         <span class="col-md-2" style="padding:0;padding-top:44px;">
-           <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
-         </span>
-         <span class="col-md-5" style="padding-top:35px;" >
-           <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
-         </span>
-         <span class="col-md-5">
-           <%#= image_tag "friend4.png", class: "col-md-3" %>
-           <%#= image_tag "friend5.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-         </span>
-       </span>
-     </div>
-     <div class="row" id= "list_row">
-       <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
-         <span class="ficon-hammer" style="font-size: 27px;padding:14px 0;">
-         </span> <span>Law</span>
-       </span>
-       <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
-         <span class="col-md-2" style="padding:0;padding-top:44px;">
-           <span id="member_count"><font style="color:rgb(101,171,125);"> 31</font> members</span>
-         </span>
-         <span class="col-md-5" style="padding-top:35px;" >
-           <span> Short Description od the coursr lorem ipsum dolor sit amet lorem ipsum </span>
-         </span>
-         <span class="col-md-5">
-           <%#= image_tag "friend4.png", class: "col-md-3" %>
-           <%#= image_tag "friend5.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-           <%#= image_tag "friend6.png", class: "col-md-3" %>
-         </span>
-       </span>
-     </div>
-     <div class="row" id= "list_row">
-       <span class="col-md-3" style="text-align:center;background:rgb(240,237,224);padding:54px 0;">
-         <span class="ficon-plus-alt" style="font-size: 27px;padding:14px 0;"> </span>
-       </span>
-       <span class="col-md-9" style="background:rgb(250,249,246);padding:10px 0;">
-         <span class="col-md-2" style="padding-top:44px;">
-           <span id="member_count"> Add  Course</span>
-         </span>
-       </span>
-     </div>
-   </div>
-   <div class="tab-pane" id="tab4">
-     <p>Howdy, I'm in Section 4.</p>
-   </div>
-   <div class="tab-pane" id="tab5">
-     <p>Howdy, I'm in Section 5.</p>
-   </div>
-   <div class="tab-pane" id="tab6">
-     <p>Howdy, I'm in Section 6.</p>
-   </div>
-  </div>
-  </div>
-  </div>
-
-  <div class="col-md-2" style="padding:0;  background:rgb(250,249,246);text-align: center;" id="right_content">
-    <div class="searchbox" style="background:transparent;border:1px solid rgb(207,204,192); width:90%;margin:10px 0;">
-      <span aria-hidden="true" class="ficon-search"></span>
-      <input type="search" placeholder="Search" style="width:80%;">
-    </div>
-    <div id="friend_list">
-      <div class="list">
-        <%#= image_tag "friend4.png", class: "col-md-3" %>
-        <span class="col-md-7">chris grady</span>
-        <span class="ficon-record col-md-2" style="color:rgb(72,160,0);"></span>
+    <div class="col-md-2" style="padding:0;  background:rgb(250,249,246);text-align: center;" id="right_content">
+      <div class="searchbox" style="background:transparent;border:1px solid rgb(207,204,192); width:90%;margin:10px 0;">
+        <span aria-hidden="true" class="ficon-search"></span>
+        <input type="search" placeholder="Search" style="width:80%;">
       </div>
-      <div class="list">
-        <%#= image_tag "friend4.png", class: "col-md-3" %>
-        <span class="col-md-7">chris grady</span>
-        <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
-      </div>
-      <div class="list">
-        <%#= image_tag "friend4.png", class: "col-md-3" %>
-        <span class="col-md-7">chris grady</span>
-        <span class="ficon-record col-md-2" style="color:rgb(72,160,0);"></span>
-      </div>
-      <div class="list">
-        <%#= image_tag "friend4.png", class: "col-md-3" %>
-        <span class="col-md-7">chris grady</span>
-        <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
-      </div>
-      <div class="list">
-        <%#= image_tag "friend4.png", class: "col-md-3" %>
-        <span class="col-md-7">chris grady</span>
-        <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
-      </div>
-      <div class="list">
-        <%#= image_tag "friend4.png", class: "col-md-3" %>
-        <span class="col-md-7">chris grady</span>
-        <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
+      <div id="friend_list">
+        <div class="list">
+          <image src="/priv/images/friend4.png" class="col-md-3">
+          <span class="col-md-7">chris grady</span>
+          <span class="ficon-record col-md-2" style="color:rgb(72,160,0);"></span>
+        </div>
+        <div class="list">
+          <image src="/priv/images/friend4.png" class="col-md-3">
+          <span class="col-md-7">chris grady</span>
+          <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
+        </div>
+        <div class="list">
+          <image src="/priv/images/friend4.png" class="col-md-3">
+          <span class="col-md-7">chris grady</span>
+          <span class="ficon-record col-md-2" style="color:rgb(72,160,0);"></span>
+        </div>
+        <div class="list">
+          <image src="/priv/images/friend4.png" class="col-md-3">
+          <span class="col-md-7">chris grady</span>
+          <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
+        </div>
+        <div class="list">
+          <image src="/priv/images/friend4.png" class="col-md-3">
+          <span class="col-md-7">chris grady</span>
+          <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
+        </div>
+        <div class="list">
+          <image src="/priv/images/friend4.png" class="col-md-3">
+          <span class="col-md-7">chris grady</span>
+          <span class="ficon-record col-md-2" style="color:rgb(220,137,82);"></span>
+        </div>
       </div>
     </div>
   </div>
-  </div>
 
-   <style type="text/css">
-     footer {
-       line-height: 3;
-       font-size: 20px;
-       min-width: 96px;
-       text-align: center;
-       color: #fff;
-       background: rgb(97,164,122);
-       background: -moz-linear-gradient(top, rgb(95,164,117) 0%, rgb(97,164,122) 100%);
-       background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ab78e), color-stop(100%,rgb(97,164,122)));
-       background: -webkit-linear-gradient(top, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
-       background: -o-linear-gradient(top, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
-       background: -ms-linear-gradient(top, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
-       background: linear-gradient(to bottom, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
-       filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab78e', endColorstr='#6bba93',GradientType=0 );
-     }
+  <style type="text/css">
+   footer {
+     line-height: 3;
+     font-size: 20px;
+     min-width: 96px;
+     text-align: center;
+     color: #fff;
+     background: rgb(97,164,122);
+     background: -moz-linear-gradient(top, rgb(95,164,117) 0%, rgb(97,164,122) 100%);
+     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#6ab78e), color-stop(100%,rgb(97,164,122)));
+     background: -webkit-linear-gradient(top, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
+     background: -o-linear-gradient(top, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
+     background: -ms-linear-gradient(top, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
+     background: linear-gradient(to bottom, rgb(95,164,117) 0%,rgb(97,164,122) 100%);
+     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6ab78e', endColorstr='#6bba93',GradientType=0 );
+   }
 
-     footer div {
-       border-right: 1px solid rgb(125,183,144);
-     }
-   </style>
+   footer div {
+     border-right: 1px solid rgb(125,183,144);
+   }
+  </style>
 
-   <footer class="row">
-     <div class="col-md-2" style='font-size: 28px;line-height: 2;'>Grouply</div>
-     <div class="col-md-8"> </div>
-     <div class="col-md-2" style="border-left: 1px solid rgb(125,183,144);">@</div>
-   </footer>
+  <footer class="row">
+    <div class="col-md-2" style='font-size: 28px;line-height: 2;'>Grouply</div>
+    <div class="col-md-8"> </div>
+    <div class="col-md-2" style="border-left: 1px solid rgb(125,183,144);">@</div>
+  </footer>
+</div>
 </body>
 </html>
 
