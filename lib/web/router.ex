@@ -17,13 +17,13 @@ defmodule Router do
   plug :match
   plug :dispatch
 
-  get "/index" do
+  get "/" do
     tmpl = EEx.eval_file "priv/templates/index.html", assigns: [title: 'Grouply']
     send_resp(conn, 200, tmpl)
   end
 
   match _ do
-    send_resp(conn, 404, "not founder")
+    send_resp(conn, 404, "not found")
   end
 
 end
