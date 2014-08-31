@@ -11,8 +11,8 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "priv/scripts/lib",
     "deps",
+    "priv/assets/bower",
     "_build",
     "test"
   ],
