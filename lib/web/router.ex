@@ -4,7 +4,7 @@ defmodule Router do
   use Plug.Router
   import Plug.Conn
 
-  plug Plug.Static, at: "/priv", from: Path.expand("../../priv/", __DIR__), gzip: true
+  plug Plug.Static, at: "/public", from: Path.expand("../../public/", __DIR__), gzip: true
 
   plug :reload_on_demand
   def reload_on_demand(conn, _opts) do

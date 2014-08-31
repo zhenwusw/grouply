@@ -2,4 +2,7 @@
 /deps
 erl_crash.dump
 *.ez
-priv/assets/bower
+public/bower
+public/styles
+node_modules
+.sass-cache
