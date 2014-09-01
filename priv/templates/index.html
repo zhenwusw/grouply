@@ -1,3 +1,5 @@
+<% import Helper.Partial %>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -8,27 +10,7 @@
 </head>
 <body>
 <div class="container">
-  <header class="row">
-    <div class="col-md-2" style='font-size: 28px;line-height: 2;'>Grouply</div>
-    <div class="col-md-2" style="color:rgb(15, 116, 84)">
-      <span aria-hidden="true" class="ficon-users col-md-4" style="line-height:3;"></span>
-      <span aria-hidden="true" class="ficon-comment col-md-4" style="line-height:3;"></span>
-      <span aria-hidden="true" class="ficon-notebook col-md-4" style="line-height:3;"></span>
-    </div>
-    <div class="col-md-6">
-      <span class="searchbox">
-        <span aria-hidden="true" class="ficon-search"></span>
-        <input type="text" placeholder="Search">
-      </span>
-    </div>
-    <div class="col-md-2" style="font-size: 16px;line-height: 3.7;padding:0;">
-      <span class="col-md-8" style="padding:0;">
-        <span class="col-md-10" style="padding:0;"> Jakub </span>
-        <span class="col-md-1 ficon-arrow" style="padding-left:0;line-height: 3.7;"></span>
-      </span>
-      <image src="/public/images/friend4.png" class="col-md-4 avatar">
-    </div>
-  </header>
+  <%= render "shared/header" %>
 
   <div class="row" >
     <div class="col-md-2" style="padding:0;background:rgb(31,31,31);" id="left_content">
@@ -365,11 +347,7 @@
     </div>
   </div>
 
-  <footer class="row">
-    <div class="col-md-2" style='font-size: 28px;line-height: 2;'>Grouply</div>
-    <div class="col-md-8"> </div>
-    <div class="col-md-2" style="border-left: 1px solid rgb(125,183,144);">@</div>
-  </footer>
+  <%= render "shared/footer" %>
 </div>
 
 <script type="text/javascript" charset="utf-8" src="/public/bower/jquery/dist/jquery.min.js"></script>
