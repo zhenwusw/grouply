@@ -351,6 +351,13 @@
 </div>
 
 <script type="text/javascript" charset="utf-8" src="/public/bower/jquery/dist/jquery.min.js"></script>
+<script type="text/javascript">
+$(function(){
+  var content_height=$('#map').height();
+  $('#right_content').height(content_height+5);
+  $('#left_content').height(content_height+5);
+});
+</script>
 </body>
 </html>
 
