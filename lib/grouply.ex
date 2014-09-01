@@ -2,6 +2,8 @@ defmodule Grouply do
   require Logger
 
   def start(_type,_args) do
+    Logger.add_translator { CowboyTranslator, :translate }
+
     Logger.info "Starting Grouply with Cowboy on http://localhost:4000"
     Plug.Adapters.Cowboy.http Router, []
 
